@@ -67,7 +67,7 @@ function sendFile(files, sent, loading) {
 
     axios({
         method: 'post',
-        url: `${SERVER}/api/upload/${name}`,
+        url: `http://${SERVER}/api/upload/${name}`,
         headers: {
             'Content-Type': 'application/octet-stream',
         },
